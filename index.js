@@ -1,19 +1,9 @@
 'use strict';
 
-const binVersion = require('bin-version'),
-      Promise    = require('bluebird');
+const binVersion = require('bin-version');
 
 function npmVersion() {
-    return new Promise(function (resolve, reject) {
-            binVersion('npm', function (err, version) {
-                if (err) {
-                    reject(err);
-                    return;
-                }
-
-                resolve(version);
-            });
-        });
+    return binVersion('npm');
 }
 
 module.exports = npmVersion;

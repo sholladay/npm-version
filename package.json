@@ -2,28 +2,30 @@
   "name": "npm-version",
   "version": "0.1.0",
   "description": "Get the version of npm your user has.",
-  "homepage": "https://github.com/solladay/npm-version",
+  "homepage": "https://github.com/sholladay/npm-version",
+  "main": "index.js",
   "author": {
     "name": "Seth Holladay",
-    "url": "http://seth-holladay.com"
+    "url": "http://seth-holladay.com",
+    "email": "me@seth-holladay.com"
   },
-  "main": "index.js",
-  "engines": {
-    "node": "^4.2.1",
-    "npm": "^3.3.6"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:sholladay/npm-version.git"
   },
   "bugs": {
-    "url": "https://github.com/solladay/npm-version/issues",
-    "email": "bugs@seth-holladay.com"
+    "url": "https://github.com/sholladay/npm-version/issues",
+    "email": "me@seth-holladay.com"
   },
   "license": "MPL-2.0",
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
-    "bin-version": "1.0.4",
-    "bluebird": "^2.10.2"
+    "bin-version": "2.0.0"
   },
   "keywords": [
     "engine",
